@@ -22,12 +22,12 @@ namespace Weatherio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            getWeather();
+            GetWeather();
         }
 
-        string APIKey = "2fde3d3a8ff84891808213950242512";
+        string APIKey = "";
 
-        void getWeather()
+        void GetWeather()
         {
             using (WebClient webClient = new WebClient())
             {
@@ -36,8 +36,8 @@ namespace Weatherio
                 {
                     var json = webClient.DownloadString(url);
                     WeatherInfo.Root Info = JsonConvert.DeserializeObject<WeatherInfo.Root>(json);
-
-                    IconBox.ImageLocation = Info.Current.Condition.Icon;
+                    
+                    IconBox.ImageLocation = "https:" + Info.Current.Condition.Icon;
                     RegionLabel.Text = Info.Location.Region;
                     CountryLabel.Text = Info.Location.Country;
                     TimeLabel.Text = Info.Location.Localtime;
@@ -59,6 +59,14 @@ namespace Weatherio
                 {
                     Console.WriteLine("Error: " + ex.Message);
                 }
+            }
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                GetWeather();
             }
         }
     }

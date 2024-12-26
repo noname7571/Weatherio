@@ -72,6 +72,7 @@
             this.textBoxCity.Name = "textBoxCity";
             this.textBoxCity.Size = new System.Drawing.Size(204, 31);
             this.textBoxCity.TabIndex = 1;
+            this.textBoxCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             // 
             // buttonSearch
             // 
@@ -92,7 +93,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(57, 120);
+            this.label2.Location = new System.Drawing.Point(54, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 3;
@@ -104,7 +105,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Cursor = System.Windows.Forms.Cursors.Default;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(57, 145);
+            this.label3.Location = new System.Drawing.Point(54, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 4;
@@ -116,7 +117,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(57, 170);
+            this.label4.Location = new System.Drawing.Point(54, 207);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 25);
             this.label4.TabIndex = 5;
@@ -128,7 +129,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Cursor = System.Windows.Forms.Cursors.Default;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 195);
+            this.label5.Location = new System.Drawing.Point(54, 232);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 25);
             this.label5.TabIndex = 6;
@@ -140,7 +141,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(57, 220);
+            this.label6.Location = new System.Drawing.Point(54, 257);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 25);
             this.label6.TabIndex = 7;
@@ -152,7 +153,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Cursor = System.Windows.Forms.Cursors.Default;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 245);
+            this.label7.Location = new System.Drawing.Point(54, 282);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 25);
             this.label7.TabIndex = 8;
@@ -164,7 +165,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Cursor = System.Windows.Forms.Cursors.Default;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(57, 270);
+            this.label8.Location = new System.Drawing.Point(54, 307);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 25);
             this.label8.TabIndex = 9;
@@ -176,7 +177,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Cursor = System.Windows.Forms.Cursors.Default;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(57, 295);
+            this.label9.Location = new System.Drawing.Point(54, 332);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 25);
             this.label9.TabIndex = 10;
@@ -188,7 +189,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(57, 320);
+            this.label10.Location = new System.Drawing.Point(54, 357);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 25);
             this.label10.TabIndex = 11;
@@ -200,7 +201,7 @@
             this.TempLabel.BackColor = System.Drawing.Color.Transparent;
             this.TempLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.TempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TempLabel.Location = new System.Drawing.Point(192, 195);
+            this.TempLabel.Location = new System.Drawing.Point(189, 232);
             this.TempLabel.Name = "TempLabel";
             this.TempLabel.Size = new System.Drawing.Size(47, 25);
             this.TempLabel.TabIndex = 12;
@@ -212,7 +213,7 @@
             this.TimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.TimeLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.Location = new System.Drawing.Point(192, 170);
+            this.TimeLabel.Location = new System.Drawing.Point(189, 207);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(47, 25);
             this.TimeLabel.TabIndex = 13;
@@ -224,7 +225,7 @@
             this.CountryLabel.BackColor = System.Drawing.Color.Transparent;
             this.CountryLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.CountryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountryLabel.Location = new System.Drawing.Point(192, 145);
+            this.CountryLabel.Location = new System.Drawing.Point(189, 182);
             this.CountryLabel.Name = "CountryLabel";
             this.CountryLabel.Size = new System.Drawing.Size(47, 25);
             this.CountryLabel.TabIndex = 14;
@@ -236,7 +237,7 @@
             this.RegionLabel.BackColor = System.Drawing.Color.Transparent;
             this.RegionLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.RegionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegionLabel.Location = new System.Drawing.Point(192, 120);
+            this.RegionLabel.Location = new System.Drawing.Point(189, 157);
             this.RegionLabel.Name = "RegionLabel";
             this.RegionLabel.Size = new System.Drawing.Size(47, 25);
             this.RegionLabel.TabIndex = 15;
@@ -248,7 +249,7 @@
             this.CondLabel.BackColor = System.Drawing.Color.Transparent;
             this.CondLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.CondLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CondLabel.Location = new System.Drawing.Point(192, 220);
+            this.CondLabel.Location = new System.Drawing.Point(189, 257);
             this.CondLabel.Name = "CondLabel";
             this.CondLabel.Size = new System.Drawing.Size(47, 25);
             this.CondLabel.TabIndex = 16;
@@ -260,7 +261,7 @@
             this.WindLabel.BackColor = System.Drawing.Color.Transparent;
             this.WindLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.WindLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WindLabel.Location = new System.Drawing.Point(192, 245);
+            this.WindLabel.Location = new System.Drawing.Point(189, 282);
             this.WindLabel.Name = "WindLabel";
             this.WindLabel.Size = new System.Drawing.Size(47, 25);
             this.WindLabel.TabIndex = 17;
@@ -272,7 +273,7 @@
             this.HumLabel.BackColor = System.Drawing.Color.Transparent;
             this.HumLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.HumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HumLabel.Location = new System.Drawing.Point(192, 270);
+            this.HumLabel.Location = new System.Drawing.Point(189, 307);
             this.HumLabel.Name = "HumLabel";
             this.HumLabel.Size = new System.Drawing.Size(47, 25);
             this.HumLabel.TabIndex = 18;
@@ -284,7 +285,7 @@
             this.UvLabel.BackColor = System.Drawing.Color.Transparent;
             this.UvLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.UvLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UvLabel.Location = new System.Drawing.Point(192, 295);
+            this.UvLabel.Location = new System.Drawing.Point(189, 332);
             this.UvLabel.Name = "UvLabel";
             this.UvLabel.Size = new System.Drawing.Size(47, 25);
             this.UvLabel.TabIndex = 19;
@@ -296,7 +297,7 @@
             this.PressureLabel.BackColor = System.Drawing.Color.Transparent;
             this.PressureLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.PressureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PressureLabel.Location = new System.Drawing.Point(192, 320);
+            this.PressureLabel.Location = new System.Drawing.Point(189, 357);
             this.PressureLabel.Name = "PressureLabel";
             this.PressureLabel.Size = new System.Drawing.Size(47, 25);
             this.PressureLabel.TabIndex = 20;
@@ -305,9 +306,11 @@
             // IconBox
             // 
             this.IconBox.BackColor = System.Drawing.Color.Transparent;
-            this.IconBox.Location = new System.Drawing.Point(460, 23);
+            this.IconBox.ImageLocation = "";
+            this.IconBox.Location = new System.Drawing.Point(59, 80);
             this.IconBox.Name = "IconBox";
-            this.IconBox.Size = new System.Drawing.Size(100, 72);
+            this.IconBox.Size = new System.Drawing.Size(85, 77);
+            this.IconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.IconBox.TabIndex = 21;
             this.IconBox.TabStop = false;
             // 
