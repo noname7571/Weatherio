@@ -41,19 +41,19 @@ namespace Weatherio
                     RegionLabel.Text = Info.Location.Region;
                     CountryLabel.Text = Info.Location.Country;
                     TimeLabel.Text = Info.Location.Localtime;
-                    TempLabel.Text = Info.Current.TempC.ToString("F1") + "°C";
+                    TempLabel.Text = Info.Current.Temp_c.ToString() + "°C";
                     CondLabel.Text = Info.Current.Condition.Text;
-                    if (Info.Current.WindKph != 0)
+                    if (Info.Current.Wind_kph != 0)
                     {
-                        WindLabel.Text = Info.Current.WindKph.ToString() + " kph, " + Info.Current.WindDir;
+                        WindLabel.Text = Info.Current.Wind_kph.ToString() + " kph, " + Info.Current.Wind_dir;
                     }
                     else
                     {
-                        WindLabel.Text = Info.Current.WindKph.ToString() + " kph";
+                        WindLabel.Text = Info.Current.Wind_kph.ToString() + " kph";
                     }
                     HumLabel.Text = Info.Current.Humidity.ToString();
                     UvLabel.Text = Info.Current.Uv.ToString();
-                    PressureLabel.Text = Info.Current.PressureMb.ToString() + " hPa";
+                    PressureLabel.Text = Info.Current.Pressure_mb.ToString() + " hPa";
                 }
                 catch (Exception ex)
                 {

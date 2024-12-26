@@ -43,26 +43,26 @@ namespace Weatherio
         {
             public long LastUpdatedEpoch { get; set; }
             public string LastUpdated { get; set; }
-            public float TempC { get; set; }
-            public double TempF { get; set; }
-            public int IsDay { get; set; }
-            public double WindMph { get; set; }
-            public float WindKph { get; set; }
-            public int WindDegree { get; set; }
-            public string WindDir { get; set; }
-            public float PressureMb { get; set; }
-            public double PressureIn { get; set; }
-            public double PrecipMm { get; set; }
-            public double PrecipIn { get; set; }
+            public float Temp_c { get; set; }
+            public double Temp_f { get; set; }
+            public int Is_day { get; set; }
+            public double Wind_mph { get; set; }
+            public float Wind_kph { get; set; }
+            public int Wind_degree { get; set; }
+            public string Wind_dir { get; set; }
+            public float Pressure_mb { get; set; }
+            public double Pressure_in { get; set; }
+            public double Precip_mm { get; set; }
+            public double Precip_in { get; set; }
             public int Humidity { get; set; }
             public int Cloud { get; set; }
-            public double FeelslikeC { get; set; }
-            public double FeelslikeF { get; set; }
-            public double VisKm { get; set; }
-            public double VisMiles { get; set; }
+            public double Feelslike_c { get; set; }
+            public double Feelslike_f { get; set; }
+            public double Vis_km { get; set; }
+            public double Vis_miles { get; set; }
             public float Uv { get; set; }
-            public double GustMph { get; set; }
-            public double GustKph { get; set; }
+            public double Gust_mph { get; set; }
+            public double Gust_kph { get; set; }
             public Condition Condition { get; set; }
             public AirQuality AirQuality { get; set; }
         }
